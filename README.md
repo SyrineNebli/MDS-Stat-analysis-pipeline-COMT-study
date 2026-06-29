@@ -1,69 +1,74 @@
-```markdown
 # 🧬 Molecular Dynamics Statistical Analysis Pipeline
 
-A reproducible and statistically rigorous pipeline for analyzing molecular dynamics (MD) simulations generated from **GROMACS trajectories**.  
+A reproducible and statistically rigorous pipeline for analyzing **GROMACS molecular dynamics (MD) trajectories**.
 
-This framework implements advanced statistical treatment of time-correlated data, ensuring **robust uncertainty quantification, convergence assessment, and publication-quality outputs** for drug discovery and structural biology studies.
+This framework provides robust statistical analysis of time-correlated MD data, including uncertainty quantification, convergence assessment, and publication-quality visualizations for computational chemistry, structural biology, and drug discovery.
 
 ---
 
-## 📌 Overview
+# 📌 Overview
 
-Molecular dynamics simulations produce highly correlated time-series data that require specialized statistical treatment.  
-This pipeline provides a **complete end-to-end workflow** for:
+Molecular dynamics trajectories consist of highly autocorrelated time-series data that require specialized statistical treatment.
+
+This pipeline performs a complete analysis workflow including:
 
 - Structural stability analysis
-- Ligand binding dynamics evaluation
-- Statistical uncertainty quantification
+- Ligand binding dynamics
+- Statistical uncertainty estimation
 - Convergence diagnostics
-- Publication-ready visualization
+- Publication-ready figures and tables
 
 ---
 
-## 🚀 Key Features
+# 🚀 Features
 
-### 📊 Statistical Robustness
-- Block averaging to reduce autocorrelation bias
-- Bootstrap resampling (BCa, 10,000+ iterations)
-- Effective sample size (Neff) estimation
-- Autocorrelation function (ACF) analysis
+## 📊 Statistical Analysis
 
-### 📉 Convergence Analysis
-- Linear regression trend detection
-- Sliding window statistical comparison
+- Block averaging to reduce autocorrelation
+- Bootstrap confidence intervals (BCa, 10,000+ resamples)
+- Effective sample size (Neff)
+- Autocorrelation analysis
+- Descriptive statistics
+
+## 📉 Convergence Assessment
+
+- Linear regression trend analysis
+- Drift detection
+- Sliding-window comparison
 - Equilibration validation
-- Drift detection in trajectories
 
-### 🧪 Structural Descriptors
-- RMSD (protein backbone & ligand)
+## 🧬 Structural Descriptors
+
+- Protein RMSD
+- Ligand RMSD
 - Radius of gyration (Rg)
 - Solvent-accessible surface area (SASA)
-- Hydrogen bond analysis
-- Ligand RMSD
+- Hydrogen bonds
 
-### 📦 Automation
-- Fully automated pipeline execution
-- Configurable analysis parameters
-- Batch processing of multiple complexes
-- Export of figures and statistical tables
+## ⚙️ Automation
 
----
-
-## 🧬 Scientific Objective
-
-This pipeline is designed to:
-
-- Ensure statistically valid interpretation of MD simulations
-- Compare ligand binding stability across multiple compounds
-- Identify stable vs dynamic binding regimes
-- Support structure-based drug design decisions
+- Batch processing
+- Configurable parameters
+- Automatic figure generation
+- Excel and CSV exports
 
 ---
 
-## 📁 Project Structure
+# 🎯 Scientific Objective
 
-```
+The pipeline enables statistically rigorous comparison of MD simulations by:
 
+- Quantifying structural stability
+- Evaluating ligand binding behavior
+- Detecting simulation drift
+- Assessing convergence
+- Producing publication-quality statistical summaries
+
+---
+
+# 📁 Project Structure
+
+```text
 project/
 │
 ├── OPI/
@@ -80,17 +85,18 @@ project/
 │
 ├── analysis_results/
 │   ├── figures/
-│   │   ├── OPI/
-│   │   ├── L2/
-│   │   ├── ...
 │   │   ├── comparison_plots/
+│   │   ├── OPI/
+│   │   ├── DNC/
+│   │   ├── L2/
+│   │   └── ...
 │   │
 │   ├── tables/
 │   │   ├── summary_statistics.xlsx
 │   │   ├── bootstrap_results.xlsx
 │   │   ├── effective_sample_size.xlsx
 │   │   ├── trend_analysis.xlsx
-│   │   ├── convergence_analysis.xlsx
+│   │   └── convergence_analysis.xlsx
 │   │
 │   ├── processed_data/
 │   └── analysis_summary.txt
@@ -105,85 +111,114 @@ project/
 ├── setup_verify.py
 ├── requirements.txt
 └── README.md
-
 ```
 
 ---
 
-## ⚙️ Workflow
+# ⚙️ Workflow
 
-The analysis pipeline follows a rigorous statistical workflow:
-
+```text
+Raw GROMACS XVG files
+          │
+          ▼
+ Equilibration filtering
+     (e.g. 50–150 ns)
+          │
+          ▼
+   Block averaging
+     (5–10 ns)
+          │
+          ▼
+ Descriptive statistics
+          │
+          ▼
+ Bootstrap resampling
+ (10,000 BCa iterations)
+          │
+          ▼
+ Autocorrelation analysis
+      (Neff estimation)
+          │
+          ▼
+ Linear trend detection
+          │
+          ▼
+ Convergence assessment
+          │
+          ▼
+ Publication-ready tables
+      and figures
 ```
-
-Raw MD Trajectories (XVG files)
-↓
-Equilibration Filtering (50–150 ns)
-↓
-Block Averaging (5–10 ns blocks)
-↓
-Descriptive Statistics (mean, SD, CV, etc.)
-↓
-Bootstrap Resampling (BCa, 10,000 samples)
-↓
-Autocorrelation Analysis (Neff estimation)
-↓
-Trend Detection (linear regression)
-↓
-Convergence Testing (window comparison)
-↓
-Publication Outputs (tables + figures)
-
-````
 
 ---
 
-## 🧪 Statistical Methods
+# 📊 Statistical Methods
 
-### 📊 Descriptive Statistics
-- Mean, median, standard deviation (SD)
-- Standard error of the mean (SEM)
+## Descriptive Statistics
+
+- Mean
+- Median
+- Standard deviation (SD)
+- Standard error (SEM)
 - Coefficient of variation (CV)
 - Interquartile range (IQR)
 
-### 📉 Bootstrap Analysis
+---
+
+## Bootstrap Analysis
+
+- BCa bootstrap confidence intervals
 - 10,000 resampling iterations
-- Bias-corrected and accelerated (BCa) confidence intervals
-- Robust uncertainty quantification
-
-### 🔁 Autocorrelation & Neff
-- Integrated autocorrelation time
-- Effective sample size (Neff)
-- Sampling efficiency (%)
-
-### 📈 Trend Analysis
-- Linear regression on block-averaged data
-- Slope and R² estimation
-- Statistical significance (p < 0.05)
-
-### ✔️ Convergence Criteria
-A system is considered converged when:
-- No significant trend is detected
-- Stable statistical descriptors across time windows
-- Consistent Neff and CV behavior
+- Robust uncertainty estimation
 
 ---
 
-## 📦 Installation
+## Autocorrelation Analysis
 
-### 1. Clone repository
+- Autocorrelation function (ACF)
+- Integrated autocorrelation time
+- Effective sample size (Neff)
+- Sampling efficiency
+
+---
+
+## Trend Analysis
+
+Linear regression is performed on block-averaged trajectories to estimate:
+
+- Slope
+- R²
+- p-value
+
+---
+
+## Convergence Criteria
+
+A trajectory is considered converged when:
+
+- No significant linear trend
+- Stable statistical descriptors
+- Consistent Neff
+- Stable block averages
+
+---
+
+# 📦 Installation
+
+## Clone repository
+
 ```bash
-git clone https://github.com/USERNAME/md-analysis-pipeline.git
+git clone https://github.com/SyrineNebli/md-analysis-pipeline.git
 cd md-analysis-pipeline
-````
+```
 
-### 2. Install dependencies
+## Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Verify installation
+## Verify installation
 
 ```bash
 python setup_verify.py
@@ -191,106 +226,70 @@ python setup_verify.py
 
 ---
 
-## ▶️ Usage
+# ▶️ Usage
 
-### Run full analysis
+Run the complete analysis:
 
 ```bash
 python run_analysis.py
 ```
 
-### Output location
+Results are automatically saved in
 
-```
+```text
 analysis_results/
 ```
 
-Includes:
+including
 
-* Figures (PNG / PDF)
-* Statistical tables (Excel / CSV)
-* Convergence reports
-* Processed block-averaged data
-
----
-
-## 📊 Output Examples
-
-### Figures
-
-* RMSD time series plots
-* Bootstrap distributions
-* Autocorrelation functions
-* Trend and convergence plots
-* Ligand comparison plots
-
-### Tables
-
-* Summary statistics
-* Effective sample size (Neff)
-* Bootstrap confidence intervals
-* Trend analysis results
-* Publication-ready combined table
+- Figures
+- Statistical tables
+- Convergence reports
+- Processed trajectories
 
 ---
 
-## 🧠 Interpretation Guidelines
+# 📈 Generated Outputs
 
-### ✔️ Good Simulation Behavior
+## Figures
 
-* Stable RMSD / ligand RMSD
-* Low CV (< 5–10%)
-* High Neff (good independence)
-* No significant trend (p > 0.05)
+- RMSD time series
+- Ligand RMSD
+- Radius of gyration
+- SASA
+- Hydrogen bonds
+- Bootstrap distributions
+- Autocorrelation functions
+- Trend analysis
+- Comparison plots
 
-### ⚠️ Potential Issues
+## Tables
 
-* Significant drift in RMSD
-* Low Neff (strong autocorrelation)
-* High variability (CV > 10%)
-* Non-converged trajectories
+- Summary statistics
+- Bootstrap confidence intervals
+- Effective sample size
+- Trend analysis
+- Convergence diagnostics
 
----
 
-## 📚 Scientific Foundations
+# 📚 Statistical Foundations
 
-This pipeline is based on established statistical and computational chemistry methodologies:
+The implemented methodology follows established references:
 
-* Efron & Tibshirani (1993) — Bootstrap methods
-* DiCiccio & Efron (1996) — BCa confidence intervals
-* Sokal (1997) — Autocorrelation in statistical mechanics
-* Chodera & Shirts (2011) — Effective sample size in simulations
-* Berg & Neuhaus (1992) — Block averaging techniques
-
----
-
-## 👩‍🔬 Applications
-
-* Drug discovery (ligand screening)
-* Protein-ligand stability evaluation
-* Structural bioinformatics
-* Molecular mechanism investigation
-* Comparative binding analysis
+- Berg & Neuhaus (1992) – Block averaging
+- Efron & Tibshirani (1993) – Bootstrap methods
+- DiCiccio & Efron (1996) – BCa confidence intervals
+- Sokal (1997) – Autocorrelation analysis
+- Chodera & Shirts (2011) – Effective sample size estimation
 
 ---
 
-## 👤 Author
+# 🔬 Applications
 
-Developed for advanced molecular dynamics analysis in computational chemistry and bioinformatics.
-
----
-
-## 📜 License
-
-This project is intended for academic and research use. Modify freely with citation.
+- Structure-based drug discovery
+- Protein–ligand stability analysis
+- Comparative MD studies
+- Computational structural biology
+- Molecular mechanism investigation
 
 ---
-
-## ⭐ Future Improvements
-
-* Free energy analysis (MM/PBSA integration)
-* Principal component analysis (PCA)
-* Markov state models (MSM)
-* Machine learning-based clustering of trajectories
-
-```
