@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/29446294/README.md)
 🔬 MD Analysis Pipeline (Statistical Framework for Molecular Dynamics)
 
 This repository provides a fully automated statistical analysis pipeline for molecular dynamics (MD) trajectories generated with GROMACS.
