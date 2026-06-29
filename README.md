@@ -208,8 +208,8 @@ A trajectory is considered converged when:
 ## Clone repository
 
 ```bash
-git clone https://github.com/SyrineNebli/md-analysis-pipeline.git
-cd md-analysis-pipeline
+git clone https://github.com/SyrineNebli/MDS-Stat-analysis-pipeline-COMT-study.git
+cd MDS-Stat-analysis-pipeline-COMT-study
 ```
 
 ## Install dependencies
