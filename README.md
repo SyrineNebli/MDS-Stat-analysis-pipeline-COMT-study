@@ -1,7 +1,3 @@
-Voici un **README.md détaillé, bien structuré et prêt pour GitHub**, adapté à un projet scientifique de niveau publication (MD + statistiques avancées). Tu peux le copier directement.
-
----
-
 ```markdown
 # 🧬 Molecular Dynamics Statistical Analysis Pipeline
 
@@ -297,17 +293,4 @@ This project is intended for academic and research use. Modify freely with citat
 * Markov state models (MSM)
 * Machine learning-based clustering of trajectories
 
-```
-
----
-
-# 🚀 Si tu veux aller encore plus loin
-
-Je peux t’aider à transformer ce repo en :
-- 📦 **:contentReference[oaicite:0]{index=0}**
-- 📄 **:contentReference[oaicite:1]{index=1}**
-- 🌐 **:contentReference[oaicite:2]{index=2}**
-- 🧾 **:contentReference[oaicite:3]{index=3}**
-
-Dis-moi 👍
 ```
