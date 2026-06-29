@@ -1,0 +1,262 @@
+======================================================================
+MD SIMULATION ANALYSIS RESULTS
+======================================================================
+
+
+OPI
+----------------------------------------------------------------------
+
+  rmsd:
+    Mean ± SD:        0.196572 ± 0.025363
+    95% CI:           [0.184693, 0.206186]
+    CV:               12.90%
+    Neff:             3 (efficiency: 16.0%)
+    Trend slope:      7.15e-04 (R² = 0.6959)
+    Converged:        No
+
+  rg:
+    Mean ± SD:        1.695215 ± 0.009481
+    95% CI:           [1.691103, 1.699181]
+    CV:               0.56%
+    Neff:             3 (efficiency: 14.7%)
+    Trend slope:      -2.89e-04 (R² = 0.8156)
+    Converged:        No
+
+  sasa:
+    Mean ± SD:        108.094089 ± 1.966769
+    95% CI:           [107.231966, 108.907907]
+    CV:               1.82%
+    Neff:             3 (efficiency: 14.5%)
+    Trend slope:      -6.43e-02 (R² = 0.9349)
+    Converged:        No
+
+  hbonds:
+    Mean ± SD:        3.276920 ± 0.727493
+    95% CI:           [3.005620, 3.625870]
+    CV:               22.20%
+    Neff:             5 (efficiency: 23.9%)
+    Trend slope:      -1.29e-02 (R² = 0.2731)
+    Converged:        No
+
+  ligand_rmsd:
+    Mean ± SD:        0.202336 ± 0.011985
+    95% CI:           [0.197251, 0.207604]
+    CV:               5.92%
+    Neff:             3 (efficiency: 16.7%)
+    Trend slope:      -3.62e-04 (R² = 0.7979)
+    Converged:        No
+
+L2
+----------------------------------------------------------------------
+
+  rmsd:
+    Mean ± SD:        0.165945 ± 0.015441
+    95% CI:           [0.157984, 0.171599]
+    CV:               9.30%
+    Neff:             6 (efficiency: 32.2%)
+    Trend slope:      1.41e-04 (R² = 0.0734)
+    Converged:        Yes
+
+  rg:
+    Mean ± SD:        1.697350 ± 0.006914
+    95% CI:           [1.694236, 1.700201]
+    CV:               0.41%
+    Neff:             6 (efficiency: 30.2%)
+    Trend slope:      7.30e-05 (R² = 0.0977)
+    Converged:        Yes
+
+  sasa:
+    Mean ± SD:        110.224072 ± 1.685343
+    95% CI:           [109.513939, 110.937553]
+    CV:               1.53%
+    Neff:             5 (efficiency: 27.3%)
+    Trend slope:      4.72e-03 (R² = 0.0068)
+    Converged:        Yes
+
+  hbonds:
+    Mean ± SD:        1.712560 ± 0.524266
+    95% CI:           [1.471098, 1.916674]
+    CV:               30.61%
+    Neff:             12 (efficiency: 58.8%)
+    Trend slope:      -3.37e-03 (R² = 0.0361)
+    Converged:        Yes
+
+  ligand_rmsd:
+    Mean ± SD:        0.178204 ± 0.023772
+    95% CI:           [0.166966, 0.187231]
+    CV:               13.34%
+    Neff:             5 (efficiency: 25.2%)
+    Trend slope:      5.54e-04 (R² = 0.4755)
+    Converged:        No
+
+L4
+----------------------------------------------------------------------
+
+  rmsd:
+    Mean ± SD:        0.124270 ± 0.013271
+    95% CI:           [0.119384, 0.130897]
+    CV:               10.68%
+    Neff:             11 (efficiency: 56.4%)
+    Trend slope:      1.91e-04 (R² = 0.1804)
+    Converged:        Yes
+
+  rg:
+    Mean ± SD:        1.699629 ± 0.005660
+    95% CI:           [1.697348, 1.702197]
+    CV:               0.33%
+    Neff:             5 (efficiency: 24.2%)
+    Trend slope:      8.14e-05 (R² = 0.1809)
+    Converged:        Yes
+
+  sasa:
+    Mean ± SD:        107.761232 ± 1.320360
+    95% CI:           [107.272460, 108.420119]
+    CV:               1.23%
+    Neff:             5 (efficiency: 25.1%)
+    Trend slope:      3.19e-02 (R² = 0.5114)
+    Converged:        No
+
+  hbonds:
+    Mean ± SD:        0.573250 ± 0.357938
+    95% CI:           [0.403130, 0.713180]
+    CV:               62.44%
+    Neff:             4 (efficiency: 21.3%)
+    Trend slope:      -9.84e-03 (R² = 0.6614)
+    Converged:        No
+
+  ligand_rmsd:
+    Mean ± SD:        0.132339 ± 0.009732
+    95% CI:           [0.128017, 0.136384]
+    CV:               7.35%
+    Neff:             6 (efficiency: 27.7%)
+    Trend slope:      1.76e-04 (R² = 0.2873)
+    Converged:        No
+
+L10
+----------------------------------------------------------------------
+
+  rmsd:
+    Mean ± SD:        0.125424 ± 0.012199
+    95% CI:           [0.120677, 0.131228]
+    CV:               9.73%
+    Neff:             7 (efficiency: 33.6%)
+    Trend slope:      -1.83e-04 (R² = 0.1959)
+    Converged:        Yes
+
+  rg:
+    Mean ± SD:        1.690863 ± 0.003403
+    95% CI:           [1.689575, 1.692537]
+    CV:               0.20%
+    Neff:             5 (efficiency: 25.4%)
+    Trend slope:      -7.65e-05 (R² = 0.4420)
+    Converged:        No
+
+  sasa:
+    Mean ± SD:        104.625023 ± 0.993149
+    95% CI:           [104.196390, 105.040084]
+    CV:               0.95%
+    Neff:             4 (efficiency: 19.0%)
+    Trend slope:      -2.83e-02 (R² = 0.7085)
+    Converged:        No
+
+  hbonds:
+    Mean ± SD:        0.827610 ± 0.031574
+    95% CI:           [0.814318, 0.841320]
+    CV:               3.82%
+    Neff:             5 (efficiency: 23.8%)
+    Trend slope:      -6.51e-04 (R² = 0.3717)
+    Converged:        No
+
+  ligand_rmsd:
+    Mean ± SD:        0.116532 ± 0.007125
+    95% CI:           [0.114082, 0.120420]
+    CV:               6.11%
+    Neff:             8 (efficiency: 39.6%)
+    Trend slope:      7.58e-06 (R² = 0.0010)
+    Converged:        Yes
+
+L11
+----------------------------------------------------------------------
+
+  rmsd:
+    Mean ± SD:        0.201710 ± 0.015020
+    95% CI:           [0.194902, 0.207639]
+    CV:               7.45%
+    Neff:             4 (efficiency: 21.3%)
+    Trend slope:      3.78e-04 (R² = 0.5539)
+    Converged:        No
+
+  rg:
+    Mean ± SD:        1.715465 ± 0.002494
+    95% CI:           [1.714456, 1.716573]
+    CV:               0.15%
+    Neff:             11 (efficiency: 57.1%)
+    Trend slope:      2.41e-05 (R² = 0.0814)
+    Converged:        Yes
+
+  sasa:
+    Mean ± SD:        110.995385 ± 0.643985
+    95% CI:           [110.750591, 111.308125]
+    CV:               0.58%
+    Neff:             9 (efficiency: 44.5%)
+    Trend slope:      8.37e-03 (R² = 0.1478)
+    Converged:        Yes
+
+  hbonds:
+    Mean ± SD:        3.233290 ± 0.909333
+    95% CI:           [2.813889, 3.592340]
+    CV:               28.12%
+    Neff:             3 (efficiency: 16.9%)
+    Trend slope:      -2.50e-02 (R² = 0.6607)
+    Converged:        No
+
+  ligand_rmsd:
+    Mean ± SD:        0.073268 ± 0.003719
+    95% CI:           [0.071608, 0.074786]
+    CV:               5.08%
+    Neff:             20 (efficiency: 100.0%)
+    Trend slope:      -5.63e-05 (R² = 0.2002)
+    Converged:        No
+
+DNC
+----------------------------------------------------------------------
+
+  rmsd:
+    Mean ± SD:        0.094152 ± 0.018637
+    95% CI:           [0.087294, 0.103447]
+    CV:               19.79%
+    Neff:             5 (efficiency: 23.4%)
+    Trend slope:      -3.15e-04 (R² = 0.2498)
+    Converged:        No
+
+  rg:
+    Mean ± SD:        1.674105 ± 0.003198
+    95% CI:           [1.672602, 1.675371]
+    CV:               0.19%
+    Neff:             6 (efficiency: 30.2%)
+    Trend slope:      8.38e-05 (R² = 0.5999)
+    Converged:        No
+
+  sasa:
+    Mean ± SD:        102.137409 ± 0.791502
+    95% CI:           [101.816062, 102.493971]
+    CV:               0.77%
+    Neff:             4 (efficiency: 21.4%)
+    Trend slope:      1.92e-02 (R² = 0.5160)
+    Converged:        No
+
+  hbonds:
+    Mean ± SD:        0.177910 ± 0.404472
+    95% CI:           [0.051205, 0.464459]
+    CV:               227.35%
+    Neff:             8 (efficiency: 40.4%)
+    Trend slope:      7.29e-03 (R² = 0.2842)
+    Converged:        No
+
+  ligand_rmsd:
+    Mean ± SD:        0.079274 ± 0.008536
+    95% CI:           [0.076031, 0.083427]
+    CV:               10.77%
+    Neff:             11 (efficiency: 53.5%)
+    Trend slope:      2.11e-05 (R² = 0.0053)
+    Converged:        Yes
